@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="outer-container">
+     <div class="banner">
+      <h1>current Player is </h1>
+      <button class="change-names">set Names</button>
+     </div>
+      <div class="container">
+        <div class="player-1">
+          <h2 id="person-1">Player 1 score </h2>
+  
+          <h2 class="player-1-current">0</h2>
+        </div>
+        <div class="controls">
+          <h2 class="dice-output">DICE</h2>
+          <button class="roll-dice">Roll Dice</button>
+          <button class="hold-dice">Hold</button>
+        </div>
+          <div class="player-2">
+            <h2 id="person-2">Player 2 score</h2>
+  
+            <h2 class="player-2-current">0</h2>
+          </div>
+        </div>
+        
+      </div>
+      <dialog  id="input-modal">
+        <div class="input-box">
+          <label for="input-p-1">Player 1: </label> <input required type="text" id="input-p-1">
+          <label for="input-p-2">Player 2: </label><input required type="text" id="input-p-2">
+          <button  class="submit">Done   </button>
+        </div>
+      </dialog>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

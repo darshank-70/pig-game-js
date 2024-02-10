@@ -1,0 +1,111 @@
+body {
+  margin: 0%;
+}
+.container {
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container .player-1 {
+  background-image: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+  padding: 25px;
+  margin: 25px;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 1px 1px 6px black;
+}
+
+.container .player-2 {
+  background-image: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+  padding: 25px;
+  margin: 25px;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 1px 1px 6px black;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  align-items: center;
+}
+.container .active {
+  padding: 25px;
+  margin: 25px;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+#input-modal::backdrop {
+  opacity: 0.4;
+  background-image: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  filter: blur(3px);
+}
+#input-modal input[type="text"] {
+  margin: 12px;
+  padding: 12px;
+  background-color: rgba(95, 158, 160, 0.466);
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+}
+#input-modal button {
+  margin: 12px;
+  padding: 12px;
+  background-color: darksalmon;
+  font-weight: 600;
+  width: 75px;
+}
+#input-modal button :hover {
+  margin: 12px;
+  padding: 12px;
+  background-color: rgba(233, 150, 122, 0.692);
+  font-weight: 500;
+  width: 75px;
+}
+#input-modal {
+  background-color: beige;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 3px 4px #01021175;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  color: aliceblue;
+}
+.change-names,
+.roll-dice,
+.hold-dice {
+  margin: 12px;
+  padding: 12px;
+  width: 135px;
+  border-radius: 22px;
+  border: none;
+  box-shadow: 2px 1px 4px aliceblue;
+  filter: drop-shadow();
+  background-color: blanchedalmond;
+}
